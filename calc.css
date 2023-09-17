@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@100&display=swap');
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align:center;
+
+}
+body {
+    background-image: url(fon5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 850px) {
+    body {
+        background-size: auto;
+    }
+}
+
+.NameCalculator {
+    font-family: Roboto, sens-serif;
+    font-size: 4em;
+    font-weight: normal;
+    /*text-shadow: 5px 5px 15px #49466b;*/
+}
+
+@media (max-width: 400px) {
+    .NameCalculator {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 250px) {
+    .NameCalculator {
+        font-size: 2em;
+    }
+}
+.container1 {
+    text-align: center;
+    width: 100%;
+}
+
+.inputs {
+    line-height: 70px;
+}
+
+.form-control1,
+.form-control2 
+ {
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 60px rgba(61, 59, 59, 0.4);
+    background: transparent;
+    color: black;
+    /*background-color: #6387a8;*/
+}
+
+.btnplus,
+.btnminus,
+.btnshare,
+.btnmultiply
+{
+ border: 1px solid; 
+ width: 175px;
+ margin: 10px 10px 20px 10px;
+ height: 30px;
+ border-radius: 10px;
+ box-shadow: 4px 4px 60px rgba(61, 59, 59, 0.25);
+ background: transparent;
+ cursor: pointer;
+ transition: 0.08s all;
+}
+
+.btnmultiply {
+    padding-top: 10px;
+}
+.btnsubmit:hover {
+    border-color:dimgrey;
+}
+.btnplus:active,
+.btnminus:active,
+.btnshare:active,
+.btnmultiply:active,
+.btnsubmit:active {
+    transform: scale(0.98);
+}
+.btnplus:hover,
+.btnminus:hover,
+.btnshare:hover,
+.btnmultiply:hover {
+    border-color:gray;
+}
+
+.btnsubmit {
+    border: 1px solid;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.08s all;
+}
+
+.result {
+    border: none;
+    height: 30px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 60px rgba(61, 59, 59, 0.4);
+    padding-top: 10px;
+}
+
+@media (max-width: 300px) {
+    .result {
+        width: 200px
+    }
+}
