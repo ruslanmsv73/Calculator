@@ -48,7 +48,7 @@ body {
 .form-control1,
 .form-control2 
  {
-    border: none;
+    border: 1px solid;
     width: 100%;
     height: 45px;
     border-radius: 10px;
@@ -58,6 +58,12 @@ body {
     /*background-color: #6387a8;*/
 }
 
+@media (max-width: 850px) {
+    .form-control1,
+    .form-control2 {
+
+    }
+}
 .btnplus,
 .btnminus,
 .btnshare,
@@ -117,6 +123,6 @@ body {
 
 @media (max-width: 300px) {
     .result {
-        width: 200px
+        width: 200px;
     }
 }
